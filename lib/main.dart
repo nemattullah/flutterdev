@@ -1,35 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutterdev/gradient_container.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         // backgroundColor: Color.fromARGB(255, 47, 5, 120),
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 180, 22, 208),
-                Color.fromARGB(255, 5, 16, 130),
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: const Center(
-            child: Text(
-              "Hello Nemat !!",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 28.0,
-              ),
-            ),
-          ),
-        ),
+        body: GradientContainer(),
       ),
     ),
   );
 }
+
+
 
 
 // import 'package:flutter/material.dart';
