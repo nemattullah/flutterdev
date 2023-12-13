@@ -8,6 +8,7 @@ void main() {
         // backgroundColor: Color.fromARGB(255, 47, 5, 120),
         body: GradientContainer(
             Color.fromARGB(255, 180, 22, 208), Color.fromARGB(255, 5, 16, 130)),
+        // body: GradientContainer.purple(),
       ),
     ),
   );
